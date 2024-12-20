@@ -53,9 +53,8 @@ public class DriveTrain extends SubsystemBase {
   * @param xjoystick
   * @param yjoystick
   * @param thethajoystick
-  * @param desiredAngle
   */
-  public void Drive(double xjoystick,double yjoystick,double thethajoystick, double desiredAngle) {
+  public void Drive(double xjoystick,double yjoystick,double thethajoystick) {
 
     //This boolean checks if the robot is on the blue or red team. 
     boolean isBlue= DriverStation.getAlliance().isPresent() ? DriverStation.getAlliance().get() == Alliance.Blue : false;
